@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main .title {
+  text-align: center;
+  margin-bottom: 15%;
+}
+
+main .img-desc {
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 740px) {
+  main .img-desc {
+    flex-direction: column;
+  }
+  main .img-desc .image {
+    margin: 0 0 1rem 0;
+  }
+}
+
+main .img-desc .image {
+  margin-right: 1rem;
+}
+
+main .img-desc .image img {
+  width: 350px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+main .about {
+  width: 350px;
+  border-radius: 10px;
+  background-color: #fafafa;
+}
+
+main .about .btn-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+main .about .btn-box .btn {
+  height: 3rem;
+  width: 7.291rem;
+  border: 0;
+  background: #ccc;
+}
+
+main .about .btn-box .btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+main .about .btn-box .btn:nth-child(1) {
+  border-top-left-radius: 10px;
+}
+
+main .about .btn-box .btn:nth-child(3) {
+  border-top-right-radius: 10px;
+}
+
+main .about .btn-box .btn.active {
+  border: 3px solid #00fffb;
+  background: #fff;
+}
+
+main .about .desc {
+  padding: 1rem;
+}
+
+main .about .desc .content {
+  display: none;
+}
+
+main .about .desc .content.active {
+  display: block;
+}
+
+main .about .desc h4 {
+  margin-bottom: 0.5rem;
+}
